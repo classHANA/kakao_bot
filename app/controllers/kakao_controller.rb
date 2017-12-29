@@ -25,6 +25,7 @@ class KakaoController < ApplicationController
   		return_text = ["20층","시골집","다이어트","편의점","시래기"].sample
   	elsif user_message == "고양이"
   		#고양이 사진 보여주기
+  		return_text = "나만 고양이 없어"
   		image = true
   		url = "http://thecatapi.com/api/images/get?format=xml&type=jpg"
   		cat_xml = RestClient.get(url)
@@ -55,7 +56,7 @@ class KakaoController < ApplicationController
   			},
   		:keyboard => home_keyboard
   	}
-  	
+
   	return_message = {
   		:message => {
   			:text => return_text,
