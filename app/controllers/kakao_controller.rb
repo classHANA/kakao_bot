@@ -6,7 +6,7 @@ class KakaoController < ApplicationController
   	# 	:type => "text"
   	# }
   	home_keyboard = {
-  		:type => "button",
+  		:type => "buttons",
   		:buttons => ["영화","메뉴","고양이","로또"]
   	}
 
@@ -53,7 +53,7 @@ class KakaoController < ApplicationController
 
   	# }
   	home_keyboard = {
-  		:type => "button",
+  		:type => "buttons",
   		:buttons => ["영화","메뉴","고양이","로또"]
   	}
 
