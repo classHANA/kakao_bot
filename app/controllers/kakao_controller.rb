@@ -20,7 +20,7 @@ class KakaoController < ApplicationController
   	if user_message == "로또"
   		user_message = (1..45).to_a.sample(6).to_s
   	elsif user_message == "메뉴" 
-  		user_message = ["20층","시골집","다이어트","편의점","시래기"]
+  		user_message = ["20층","시골집","다이어트","편의점","시래기"].sample
   	else
   		user_message = "지금 사용가능한 명령어는 <메뉴>,<로또> 입니다."
   	end
